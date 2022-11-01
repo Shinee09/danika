@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danika Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://shinee09.github.io/facehome/asset/css/normalize.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Swiper -->
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/img/slider 5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                </div>
+            </div>
+        </div>
+
+
+
+        <h1 class="test">
+            Áo cưới
+        </h1>
+        <p>Danika studio có rất nhiều dịch vụ chụp ảnh cưới cho các cặp đôi lựa chọn với chi phí tốt nhất tại thành phố
+            Hồ Chí Minh, giúp các cặp đôi lưu giữ mọi khoảnh khắc đẹp nhất từ nội thành Sài Gòn đến ngoại thành các tỉnh
+            Nha Trang, Đà Lạt, Hồ Cốc và một số địa điểm khác.</p>
+
+    </div>
+</body>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+
+        },
+    });
+</script>
+
+</html>
